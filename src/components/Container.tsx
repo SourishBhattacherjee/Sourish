@@ -39,6 +39,8 @@ const variants = {
 const navLinks = [
   { href: "#home", text: "Home" },
   { href: "#about", text: "About" },
+  { href: "#education", text: "Education" },
+  { href: "#experience", text: "Experience" },
   { href: "#projects", text: "Projects" },
   { href: "#services", text: "Services" },
   { href: "#contact", text: "Contact" },
@@ -83,8 +85,8 @@ export default function Container(props: ContainerProps) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: "Wendo",
-    description: `Full-stack website developer and TypeScript enthusiast.`,
+    title: "Sourish Bhattacharjee",
+    description: `Full-stack developer with expertise in web applications, cloud technologies, and modern development practices.`,
     image: "/assets/logo.webp",
     type: "website",
     ...customMeta,
@@ -128,12 +130,12 @@ export default function Container(props: ContainerProps) {
           href={`https://www.wendoj.codes${router.asPath}`}
         />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="WendoJ" />
+        <meta property="og:site_name" content="Sourish Bhattacharjee" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="WendoJ" />
+        <meta name="twitter:site" content="Sourish Bhattacharjee" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
@@ -164,7 +166,7 @@ export default function Container(props: ContainerProps) {
           </button>
         </div>
         <Link href="/">
-          <span className="text-lg font-semibold">wendo</span>
+          <span className="text-lg font-semibold">sourish</span>
         </Link>
 
         {/* Desktop menu */}

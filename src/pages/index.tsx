@@ -28,41 +28,47 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
-  { label: "Technologies mastered", value: "5+" },
-  { label: "Companies worked with", value: "15+" },
+  { label: "Internship Experience", value: "6mo" },
+  { label: "Technologies Mastered", value: "15+" },
+  { label: "Projects Completed", value: "6+" },
 ];
 
 const projects = [
   {
-    title: "Unqueue",
-    description: "E-commerce platform for selling digital products",
-    image: "/assets/unqueue.webm",
-    href: "https://unqueue.shop/",
-  },
-  {
-    title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
-    image: "/assets/infinitevps.webm",
-    href: "#",
-  },
-  {
-    title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
-    image: "/assets/translate_bot.webm",
-    href: "https://translatebot.app/",
-  },
-  {
-    title: "Wrona",
-    description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
-    href: "https://www.wrona.com/",
-  },
-  {
-    title: "This website",
-    description: "My personal website",
+    title: "Music Genre Classification using Deep Learning",
+    description: "CNN, LSTM, Autoencoder & Transformer models for audio classification. 91.3% accuracy (Transformer), 3× faster inference with CNN at 87.2%",
     image: "/assets/portfolio.webm",
-    href: "https://github.com/wendoj/portfolio",
+    href: "https://github.com/SourishBhattacherjee",
+  },
+  {
+    title: "QR-Based Visitor Management System",
+    description: "Full-stack MERN with JWT auth, role-based approvals, QR check-in, PDF hall passes. Deployed on Vercel + Render",
+    image: "/assets/portfolio.webm",
+    href: "https://github.com/SourishBhattacherjee",
+  },
+  {
+    title: "LaTeX-Based Resume Builder",
+    description: "React + Node.js platform with streamed LaTeX PDF compilation. Redis caching reduced response time from 120ms to 72ms (60% optimization)",
+    image: "/assets/portfolio.webm",
+    href: "https://github.com/SourishBhattacherjee",
+  },
+  {
+    title: "CPU Power Residency Monitor",
+    description: "Linux Kernel module for CPU active/idle residency with ktime timers and procfs stats",
+    image: "/assets/portfolio.webm",
+    href: "https://github.com/SourishBhattacherjee",
+  },
+  {
+    title: "Real-Time TCP Chat Server",
+    description: "Multi-client TCP server with thread-per-client concurrency and duplex messaging",
+    image: "/assets/portfolio.webm",
+    href: "https://github.com/SourishBhattacherjee",
+  },
+  {
+    title: "Rodent Detection on Raspberry Pi",
+    description: "Real-time camera pipeline with edge inference using OpenCV on embedded Linux",
+    image: "/assets/portfolio.webm",
+    href: "https://github.com/SourishBhattacherjee",
   },
 ];
 
@@ -70,32 +76,62 @@ const services = [
   {
     service: "Frontend Development",
     description:
-      "Creating stellar user interfaces and web experiences using the latest technologies.",
+      "React, TypeScript, Framer Motion - Building responsive, animated, and user-centric web interfaces.",
     icon: Code2,
-  },
-  {
-    service: "UX Design",
-    description:
-      "Building intuitive, user-centric designs that drive engagement and conversion.",
-    icon: Frame,
-  },
-  {
-    service: "SEO Optimization",
-    description:
-      "Enhancing your website's visibility in search engines for increased organic traffic.",
-    icon: SearchCheck,
-  },
-  {
-    service: "Responsive Design",
-    description:
-      "Designing websites that look and perform equally well on all devices and screen sizes.",
-    icon: MonitorSmartphone,
   },
   {
     service: "Backend Development",
     description:
-      "Developing robust, scalable server-side logic for a wide range of web applications.",
+      "Node.js, Express, MongoDB, PostgreSQL - Developing scalable APIs and robust server-side logic.",
     icon: Eye,
+  },
+  {
+    service: "Systems Programming",
+    description:
+      "C/C++, Linux Kernel, POSIX Sockets - Low-level systems and embedded development.",
+    icon: Frame,
+  },
+  {
+    service: "Full-Stack MERN",
+    description:
+      "MongoDB, Express, React, Node.js - End-to-end application development with modern stack.",
+    icon: SearchCheck,
+  },
+  {
+    service: "Cloud & Deployment",
+    description:
+      "Vercel, Render, Docker, Git - DevOps and cloud platform deployment optimization.",
+    icon: MonitorSmartphone,
+  },
+];
+
+const education = [
+  {
+    degree: "M.Tech Integrated in Software Engineering",
+    institution: "Vellore Institute of Technology (VIT), Vellore, Tamil Nadu",
+    year: "Aug 2022 – May 2027",
+    details: "Pursuing advanced coursework in software engineering with focus on full-stack development and system design",
+  },
+  {
+    degree: "Computer Science (Senior Secondary)",
+    institution: "Vivekananda Mission School, Kolkata, West Bengal",
+    year: "Completed",
+    details: "Strong foundation in Computer Science principles and competitive programming",
+  },
+];
+
+const experience = [
+  {
+    title: "Frontend Developer Intern",
+    company: "Valsco Technologies, Vellore, Tamil Nadu",
+    duration: "July 2025 – Oct 2025",
+    description: "Led a team of 10 frontend interns on LensKart-style e-commerce app. Designed complete frontend pipeline with Firebase Authentication, Redis verification, Inventory Management modules, and seamless backend API integration.",
+  },
+  {
+    title: "SDE Intern",
+    company: "Acceleron Solutions, Kolkata, West Bengal",
+    duration: "May 2025 – July 2025",
+    description: "Engineered scalable MERN-based QR Visitor Management System with OTP login, appointment booking, JWT authentication, dynamic QR scanning, Hall Pass PDF generation, and automated email notifications via Nodemailer. Deployed on Vercel and Render.",
   },
 ];
 
@@ -206,7 +242,7 @@ export default function Home() {
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                  Sourish Bhattacharjee.
                 </span>
               </h1>
               <p
@@ -215,8 +251,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                An experienced full-stack website developer with a passion for
-                crafting unique digital experiences.
+                A passionate full-stack developer with expertise in building scalable web applications, cloud solutions, and modern development technologies.
               </p>
             </div>
             <span
@@ -225,7 +260,7 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="mailto:wendoj@proton.me" passHref>
+              <Link href="mailto:sourishbhatt3302@gmail.com" passHref>
                 <Button>
                   Get in touch <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
@@ -269,19 +304,15 @@ export default function Home() {
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
             <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-              I&apos;m an experienced full-stack developer proficient in{" "}
+              I&apos;m an M.Tech student at{" "}
               <Link
-                href="https://create.t3.gg/"
+                href="https://vit.ac.in/"
                 target="_blank"
                 className="underline"
               >
-                TypeScript, Tailwind, and Next.js
+                Vellore Institute of Technology
               </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
-              companies, where I&apos;ve been instrumental in the entire product
-              design process; from ideation and wireframing, through
-              prototyping, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams.
+              with hands-on experience in full-stack development, systems programming, and cloud deployment. Proficient in React, Node.js, C++, and embedded systems. I excel at building scalable web applications and solving complex problems through clean, efficient code.
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
@@ -298,6 +329,59 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Education */}
+        <section id="education" data-scroll-section>
+          <div
+            data-scroll
+            data-scroll-speed=".4"
+            data-scroll-position="top"
+            className="my-24 flex flex-col justify-start space-y-10"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 1,
+                staggerChildren: 0.5,
+              }}
+              viewport={{ once: true }}
+              className="flex flex-col space-y-10"
+            >
+              <div className="flex flex-col py-6 xl:p-6">
+                <h2 className="text-4xl font-medium tracking-tight">
+                  Education &
+                  <br />
+                  <span className="text-gradient clash-grotesk tracking-normal">
+                    Certifications.
+                  </span>
+                </h2>
+                <p className="mt-2 tracking-tighter text-secondary-foreground">
+                  My educational background and professional certifications.
+                </p>
+              </div>
+              {education.map((edu) => (
+                <div
+                  key={edu.degree}
+                  className="flex flex-col items-start rounded-md bg-white/5 p-6 shadow-md backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-md"
+                >
+                  <span className="text-lg tracking-tight text-foreground font-semibold">
+                    {edu.degree}
+                  </span>
+                  <span className="mt-1 tracking-tight text-primary">
+                    {edu.institution}
+                  </span>
+                  <span className="mt-1 text-sm tracking-tighter text-muted-foreground">
+                    {edu.year}
+                  </span>
+                  <span className="mt-2 tracking-tighter text-muted-foreground">
+                    {edu.details}
+                  </span>
+                </div>
+              ))}
+            </motion.div>
           </div>
         </section>
 
@@ -338,31 +422,19 @@ export default function Home() {
                     <CarouselItem key={project.title} className="md:basis-1/2">
                       <Card id="tilt">
                         <CardHeader className="p-0">
-                          <Link href={project.href} target="_blank" passHref>
-                            {project.image.endsWith(".webm") ? (
-                              <video
-                                src={project.image}
-                                autoPlay
-                                loop
-                                muted
-                                className="aspect-video h-full w-full rounded-t-md bg-primary object-cover"
-                              />
-                            ) : (
-                              <Image
-                                src={project.image}
-                                alt={project.title}
-                                width={600}
-                                height={300}
-                                quality={100}
-                                className="aspect-video h-full w-full rounded-t-md bg-primary object-cover"
-                              />
-                            )}
-                          </Link>
+                          <div className="aspect-video h-full w-full rounded-t-md bg-primary" />
                         </CardHeader>
                         <CardContent className="absolute bottom-0 w-full bg-background/50 backdrop-blur">
                           <CardTitle className="border-t border-white/5 p-4 text-base font-normal tracking-tighter">
                             {project.description}
                           </CardTitle>
+                          <div className="px-4 pb-4">
+                            <Link href={project.href} target="_blank" passHref>
+                              <Button variant="outline" className="w-full">
+                                View on GitHub →
+                              </Button>
+                            </Link>
+                          </div>
                         </CardContent>
                       </Card>
                     </CarouselItem>
@@ -378,6 +450,59 @@ export default function Home() {
                 projects
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Experience */}
+        <section id="experience" data-scroll-section>
+          <div
+            data-scroll
+            data-scroll-speed=".4"
+            data-scroll-position="top"
+            className="my-24 flex flex-col justify-start space-y-10"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 1,
+                staggerChildren: 0.5,
+              }}
+              viewport={{ once: true }}
+              className="flex flex-col space-y-10"
+            >
+              <div className="flex flex-col py-6 xl:p-6">
+                <h2 className="text-4xl font-medium tracking-tight">
+                  Professional
+                  <br />
+                  <span className="text-gradient clash-grotesk tracking-normal">
+                    Experience.
+                  </span>
+                </h2>
+                <p className="mt-2 tracking-tighter text-secondary-foreground">
+                  A summary of my professional journey and roles.
+                </p>
+              </div>
+              {experience.map((exp) => (
+                <div
+                  key={exp.title}
+                  className="flex flex-col items-start rounded-md bg-white/5 p-6 shadow-md backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-md"
+                >
+                  <span className="text-lg tracking-tight text-foreground font-semibold">
+                    {exp.title}
+                  </span>
+                  <span className="mt-1 tracking-tight text-primary">
+                    {exp.company}
+                  </span>
+                  <span className="mt-1 text-sm tracking-tighter text-muted-foreground">
+                    {exp.duration}
+                  </span>
+                  <span className="mt-2 tracking-tighter text-muted-foreground">
+                    {exp.description}
+                  </span>
+                </div>
+              ))}
+            </motion.div>
           </div>
         </section>
 
@@ -446,7 +571,7 @@ export default function Home() {
               I&apos;m currently available for freelance work and open to
               discussing new projects.
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
+            <Link href="mailto:sourishbhatt3302@gmail.com" passHref>
               <Button className="mt-6">Get in touch</Button>
             </Link>
           </div>

@@ -4,8 +4,6 @@ A sleek, modern, and responsive personal portfolio showcasing my journey as a fu
 
 [🔗 View Live Portfolio](https://sourish-portfolio.vercel.app)
 
-All you need to know about me, my projects and skills can be found here.
-
 ## 👨‍💻 About Me
 
 Aspiring **M.Tech Software Engineer** at VIT Vellore with expertise in:
@@ -34,7 +32,7 @@ Ensure you have the following installed:
 - npm or pnpm
 - git
 
-## 🛠️ Installation
+### 🛠️ Installation
 
 ```bash
 # Clone the repository
