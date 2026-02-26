@@ -98,8 +98,8 @@ For deployment guides: [Vercel Docs](https://create.t3.gg/en/deployment/vercel)
 ## 📞 Get in Touch
 
 - **GitHub**: [@SourishBhattacherjee](https://github.com/SourishBhattacherjee)
-- **Email**: sourish@example.com
-- **LinkedIn**: [Sourish Bhattacherjee](#)
+- **Email**: sourishbhatt3302@example.com
+- **LinkedIn**: [Sourish Bhattacherjee](https://www.linkedin.com/in/sbhatt123/)
 
 ## 📝 License
 
