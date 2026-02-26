@@ -2,7 +2,7 @@
 
 A sleek, modern, and responsive personal portfolio showcasing my journey as a full-stack developer, machine learning enthusiast, and systems programmer. Built with cutting-edge web technologies and deployed on Vercel.
 
-[🔗 View Live Portfolio]((https://sourish-two.vercel.app/))
+[🔗 View Live Portfolio]([https://sourish-two.vercel.app/])
 
 All you need to know about me, my projects and skills can be found here.
 
